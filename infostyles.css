@@ -41,7 +41,7 @@
     background: linear-gradient(207.8deg, #d7f910 16.69%,  #17cee6 100%);
   }
   header img{
-    width: 200px;
+    width: 250px;
     height: 100px;
     margin-top: 60px;
     align-self: center;
@@ -497,7 +497,7 @@
     color: var(--just-white);
   }
   footer img{
-    width: 200px;
+    width: 250px;
     height: 80px;
   }
 
