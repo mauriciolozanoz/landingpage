@@ -5,7 +5,7 @@
 4. Visuales
 5. Otros
 */
-  :root{
+:root{
     /* Colores */
     --bitcoin-orange: #00df82;
     --soft-orange: #FFE9D5;
@@ -29,16 +29,33 @@
     font-family: 'DM Sans', sans-serif;
     scroll-behavior : smooth;
   }
-  header{
+  header {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 334px;
+    height: 334px; /* Ajusta la altura según tus necesidades */
     text-align: center;
     background: linear-gradient(207.8deg, #d7f910 16.69%,  #17cee6 100%);
+    z-index: 1; /* Asegúrate de que el header tenga un z-index más alto que el video */
+}
+
+  .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Coloca el video detrás del contenido del header */
+  }
+
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir el área sin distorsionarse */
   }
   header img{
     width: auto;
@@ -92,8 +109,9 @@
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url('./assets/icons/down-arrow.svg');
+    background-image: url('/assets/icons/down-arrow.svg');
   }
+
   main{
     width: 100%;
     height: auto;
@@ -139,10 +157,23 @@
   }
   .main-tables-container{
     display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    justify-content: space-between;
   }
+  
+  .datos-estados, .datos-creditos, .datos-desembolado {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+    animation: counter 5s linear forwards;
+    counter-reset: estados var(--estados);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    }
+
+  
+  
   .main-currency-table,.main-comission-table{
     width: 90%;
     min-width: 235px;
@@ -289,7 +320,7 @@
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./assets/icons/iconizer-clock.svg);
+    background-image: url(./ma_assets/clock_MA.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,7 +343,7 @@
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./assets/icons/iconizer-eye.svg);
+    background-image: url(./ma_assets/eye_MA.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -322,7 +353,7 @@
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./assets/icons/iconizer-dollar-sign.svg);
+    background-image: url(./ma_assets/dollarsign_MA.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -332,7 +363,7 @@
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./assets/icons/iconizer-check-circle.svg);
+    background-image: url(./ma_assets/checkmark_MA.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -457,7 +488,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./assets/icons/iconizer-orange-right-arrow.svg);
+    background-image: url(./ma_assets/rightarrow_MA.png);
     vertical-align: text-bottom;
   }
   .plan--tag.basico{
@@ -498,7 +529,7 @@
   }
   footer img{
     width: auto;
-    height: 80px;
+    height: 40px;
   }
 
   @media screen and (min-width: 930px) {
@@ -520,4 +551,34 @@
       font-size: 6.5rem;
       padding-bottom: 850px;
     }
+  }
+
+  @keyframes counterNegocio {
+    /* Animación hasta 10 */
+    0% { counter-increment: countNegocio 0; }
+    10% { counter-increment: countNegocio 1; }
+    20% { counter-increment: countNegocio 2; }
+    30% { counter-increment: countNegocio 3; }
+    40% { counter-increment: countNegocio 4; }
+    50% { counter-increment: countNegocio 5; }
+    60% { counter-increment: countNegocio 6; }
+    70% { counter-increment: countNegocio 7; }
+    80% { counter-increment: countNegocio 8; }
+    90% { counter-increment: countNegocio 9.; }
+    100% { counter-increment: countNegocio 10; }
+  }
+
+  @keyframes counterNegocio1 {
+    /* Animación hasta 10 */
+    0% { counter-increment: countNegocio 0; }
+    10% { counter-increment: countNegocio 0.29; }
+    20% { counter-increment: countNegocio .58; }
+    30% { counter-increment: countNegocio .87; }
+    40% { counter-increment: countNegocio 1.16; }
+    50% { counter-increment: countNegocio 1.45; }
+    60% { counter-increment: countNegocio 1.74; }
+    70% { counter-increment: countNegocio 2.03; }
+    80% { counter-increment: countNegocio 2.32; }
+    90% { counter-increment: countNegocio 2.61.; }
+    100% { counter-increment: countNegocio 2.9; }
   }

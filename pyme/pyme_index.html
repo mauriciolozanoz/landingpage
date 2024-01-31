@@ -5,40 +5,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Créditos PYME</title>
-  <link rel="icon" href="./assets/images/LOGO - CREDICLUB-01.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/images/LOGO - CREDICLUB-01.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="infostyles.css">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 930px)">
+  <link rel="stylesheet" href="/pyme/pyme_styles.css">
   <link rel="icon" href="./assets/icons/batata.svg">
 </head>
 <body>
-  <header>
-    <img src="./assets/images/Crédito-negocio-negro-CC.png" alt="">
+  <div class="blur__overlay"></div>
+  <div id="loading" class="loader"></div>
+  
+    <header>
+      <div class="nav">
+      <a class="header__left" href="../index.html">
+			<img class="header__logo" src="../assets/images/Crediclub_blanco_1.png" alt="" />
+		  </a>
+
+		  <ul class="header__middle">
+			  <li>
+			  <li><a class="header__nav__btn" href="pyme_index.html">Créditos PYME</a></li>
+			  <li><a class="header__nav__btn" href="https://supertasas.com/">Super Tasas</a></li>
+			  <li><a class="header__nav__btn" href="../mujeractiva/ma_index.html">Mujer Activa</a></li>
+			  <!-- 
+			  <li><a class="header__nav__btn" href="#creditos_digital">Crédito Digital</a></li>
+			  <li><a class="header__nav__btn" href="#creditos_productivo">Crédito Productivo</a></li>
+			  -->
+			  </li>
+		  </ul>
+
+		<div class="header__right">
+			<a class="header__nav__btn menu__btn" href="#">menu</a>
+		</div>
+  </div>
     <div class="header--title-container">
-      <h1>De emprendedores para emprendedores.</h1>
-      <p>
-        El crédito más rápido con la mejor tasa.
-      </p>
+      <h1>De emprendedores <br>para emprendedores.</h1>
       <a href="#plans" class="header--button">Conoce nuestros productos <span></span></a>
     </div>
   </header>
+
+
+	<nav class="navigation">
+		<div class="close__btn__container">
+			<img class="navigation__close__btn" src="https://thatanjan.github.io/tesla-clone-yt/media/close_icon.svg" alt="" />
+		</div>
+
+		<ul>
+			<li><a class="nav__link" href="pyme_index.html">Créditos PYME</a></li>
+			<li><a class="nav__link" href="https://supertasas.com/">Super Tasas </a></li>
+			<li><a class="nav__link" href="../mujeractiva/ma_index.html">Mujer Activa </a></li>
+			<!-- 
+			<li><a class="nav__link" href="#creditos_digital">Crédito Digital </a></li>
+			<li><a class="nav__link" href="#creditos_productivo">Crédito Productivo</a></li>
+			-->
+		</ul>
+	</nav>
+  
   <main>
     <section class="main-exchange-container">
-      <!-- <div class="backroundImg"></div> -->
       <div class="main-exchange-container--title">
-        <h2>Crédito para tus proyectos</h2>
-        <p>Presentamos soluciones eficientes y confiables brindando herramientas esenciales para el crecimiento y éxito de tu empresa.</p>
+        <h2>El crédito más rápido con la mejor tasa.</h2>
+        <p>Presentamos soluciones eficientes y confiables brindando herramientas esenciales <br>para el crecimiento y éxito de tu empresa.</p>
       </div>
       <section class="main-tables-container">
         <div class="main-currency-table">
-          <p class="currency-table--title">Crédito Líquido</p>
-          <div class="currency-table--container">
+          <div class="currency-table--container hidden">
             <table>
               <tr>
-                <td class="table__top-left">Créditos</td>
-                <td class="table__top-right table__right">250 mil hasta 5mdp</td>
+                <td colspan="2" class="table__top-title currency-table--title">Crédito Líquido</td>
+              </tr>
+              <tr>
+                <td>Créditos</td>
+                <td class="table__right">250 mil hasta 5mdp</td>
               </tr>
               <tr>
                 <td>Tasas</td>
@@ -55,16 +93,18 @@
             </table>
           </div>
           <div class="currency-table--date">
-            <p> <b>Actualizado:</b> 25 Julio 2024</p>
+            <p> Actualizado: 25 Julio 2024</p>
           </div>
         </div>
           <div class="main-comission-table">
-            <p class="comission-table--title">Crédito Negocio</p>
-            <div class="comission-table--container">
+            <div class="comission-table--container hidden">
               <table>
                 <tr>
-                  <td class="table__top-left">Créditos</td>
-                  <td class="table__top-right table__right">250 mil hasta 10mdp</td>
+                  <td colspan="2" class="table__top-title comission-table--title">Crédito Negocio</td>
+                </tr>
+                <tr>
+                  <td>Créditos</td>
+                  <td class="table__right">250 mil hasta 10mdp</td>
                 </tr>
                 <tr>
                   <td>Tasas</td>
@@ -83,7 +123,7 @@
               </table>
             </div>
             <div class="comission-table--date">
-              <p> <b>Actualizado:</b> 25 Julio 2024</p>
+              <p> Actualizado: 25 Julio 2024</p>
             </div>
         </div>
       </section>
@@ -95,22 +135,22 @@
         <p>Confiable y diseñado para tu negocio.</p>
       </div>
       <section class="product-cards--container">
-        <article class="product-detail--card">
+        <article class="product-detail--card hidden">
           <span class="clock"></span>
           <p class="product--card-title">Acceso Rápido a Capital</p>
           <p class="product--card-body">Nuestra API toma información minuto a minuto sobre las tasas que más determinan el compotamiento.</p>
         </article>
-        <article class="product-detail--card">
+        <article class="product-detail--card hidden">
           <span class="eye"></span>
           <p class="product--card-title">Claridad en Cada Paso</p>
           <p class="product--card-body">Los créditos PYME ofrecen una completa claridad en sus condiciones, facilitando decisiones empresariales informadas y estratégicas.</p>
         </article>
-        <article class="product-detail--card">
+        <article class="product-detail--card hidden">
           <span class="money"></span>
           <p class="product--card-title">Facilita la Adquisición de Activos</p>
           <p class="product--card-body">Estos créditos son ideales para adquirir nueva maquinaria y equipos especializados, ampliando así la capacidad productiva.</p>
         </article>
-        <article class="product-detail--card">
+        <article class="product-detail--card hidden">
           <span class="check-mark"></span>
           <p class="product--card-title">Logro de Metas</p>
           <p class="product--card-body">Los créditos PYME son esenciales para alcanzar metas empresariales, proporcionando recursos clave para el crecimiento y la innovación.</p>
@@ -119,7 +159,7 @@
     </section>
     <section class="bitcoin-img-container">
         <video playsinline autoplay muted loop class="backgroundVideo">
-            <source src="./assets/videos/videost.mp4" type="video/mp4">
+            <source src="../assets/videos/videost.mp4" type="video/mp4">
             Tu navegador no soporta videos en HTML5.
         </video>
         <p class="main-bitcoin--title">Conócelo hoy.</p>
@@ -135,10 +175,8 @@
           <div class="plan-info-container">
             <h3 class="plan-card--title">Persona física</h3>
             <span class="span-plan-card">250mil hasta</span>
-            <p class="plan-card--price">5mdp</p>
-            <a href="https://www.videoask.com/fn8ej2n1x" >
-                <button class="plan-card--ca">Seleccionar <span></span></button>
-            </a>            
+            <div class="plan-card--price-liquido">mdp</div>
+                <!-- <button class="plan-card--ca">Seleccionar <span></span></button> -->
           </div>
         </article>
         <article class="plans-container--card">
@@ -146,9 +184,9 @@
           <div class="plan-info-container">
             <h3 class="plan-card--title">Persona moral</h3>
             <span class="span-plan-card">250mil hasta</span>
-            <p class="plan-card--price">10mdp</p>
+            <div class="plan-card--price-negocio">mdp</div>
             <!-- <p class="plan-card--saving">Plan basico con todas las ventajas pagando solo $19 al mes.</p> -->
-            <button class="plan-card--ca">Seleccionar <span></span></button>
+            <!-- <button class="plan-card--ca">Seleccionar <span></span></button> -->
           </div>
         </article>
         <!--
@@ -168,16 +206,16 @@
   <footer>
     <section class="left">
       <ul>
-        <li> <a href="index.html">Crediclub</a></li>
+        <li> <a href="../index.html">Crediclub</a></li>
         <li> <a href="https://www.linkedin.com/company/crediclub/">Linkedin</a></li>
         <li> <a href="#">Hackernews</a></li>
       </ul>
     </section>
     <section class="rigth">
-      <img src="./assets/images/Crédito-negocio-blanco-CC.png" alt="logo de creditonegocio 2020">
+      <img src="./pyme_assets/creditonegocio_logoblanco.png" alt="logo de creditonegocio 2020">
     </section>
   </footer>
-
+<script src="pyme.js"></script>
   <!-- Add the code below inside the <body> tags of your HTML page -->
 <script>
     window.VIDEOASK_EMBED_CONFIG = {
