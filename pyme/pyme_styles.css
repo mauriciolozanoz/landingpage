@@ -114,14 +114,14 @@ a {
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 50px;
+    margin-top: 2rem;
     text-align: center;
     align-self: center;
   }
   .header--title-container h1{
     font-size: 4rem;
     font-weight: bold;
-    line-height: 6rem;
+    line-height: 4rem;
     color: white;
   }
   .header--title-container p{
@@ -567,45 +567,15 @@ a {
     font-weight: bold;
     line-height: 5.3rem;
     color: var(--black);
-     content: counter(countNegocio);
-    /* animation: counterNegocio 2s linear forwards;  */ 
   }
   
   .plan-card--price-liquido{
-    /* Tus estilos comunes aquí */
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 5.3rem;
     color: var(--black);
-    content: counter(countLiquido);
-    /*animation: counterLiquido 2s linear forwards;  */
   }
-  
-  /* @keyframes counterNegocio {
-    0% { counter-increment: countNegocio 0; }
-    10% { counter-increment: countNegocio 1; }
-    20% { counter-increment: countNegocio 2; }
-    30% { counter-increment: countNegocio 3; }
-    40% { counter-increment: countNegocio 4; }
-    50% { counter-increment: countNegocio 5; }
-    60% { counter-increment: countNegocio 6; }
-    70% { counter-increment: countNegocio 7; }
-    80% { counter-increment: countNegocio 8; }
-    90% { counter-increment: countNegocio 9; }
-    100% { counter-increment: countNegocio 10; }
-  }
-  
-  @keyframes counterLiquido {
-    0% { counter-increment: countLiquido 0; }
-    10% { counter-increment: countLiquido 1; }
-    20% { counter-increment: countLiquido 2; }
-    30% { counter-increment: countLiquido 3; }
-    40% { counter-increment: countLiquido 4; }
-    50% { counter-increment: countLiquido 5; }
-    60%, 70%, 80%, 90%, 100% { counter-increment: countLiquido 5; } 
-  } 
-  */
   
   .span-plan-card{
     font-size: 1.2rem;
@@ -700,8 +670,12 @@ a {
     .bitcoin-img-container .backgroundVideo{
       height: 300px;
     }
+    .header--title-container{
+      margin-top: 5rem;
+    }
     .header--title-container h1{
       font-size: 7rem;
+      line-height: 6rem;
     }
     .header__nav__btn {
       display: inline-block;
@@ -710,6 +684,15 @@ a {
       width: auto;
       height: 80px;
       max-width: none;
+    }
+  }
+  @media screen and (min-width: 523px) {
+    .header--title-container{
+      margin-top: 3.5rem;
+    }
+    .header--title-container h1{
+      font-size: 5rem;
+      line-height: 4rem;
     }
   }
   .loader {
@@ -761,10 +744,9 @@ a {
 }
 
 
-.scroller {
+/* .scroller {
   max-width: 1280px;
-  outline: 3px solid lime;
-}
+} */
 
 .scroller__inner {
   padding: 1rem 0;
@@ -785,7 +767,7 @@ a {
 
 .scroller[data-animated="true"] .scroller__inner {
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 20s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-duration="fast"] {

@@ -84,11 +84,12 @@ function addAnimation() {
 
     scrollerInnerContent.forEach(item => {
       const dupilcatedItem = item.cloneNode(true)
-      // console.log(dupilcatedItem);
 
       dupilcatedItem.setAttribute('aria-hidden', true)
 
       scrollerInner.appendChild(dupilcatedItem)
+      
+      
     })
   })
 }
