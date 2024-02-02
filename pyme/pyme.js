@@ -95,3 +95,85 @@ function addAnimation() {
 }
 
 addAnimation()
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     let indexActual = 0;
+//     const testimonios = document.querySelectorAll(".section-testimonial");
+//     const totalTestimonios = testimonios.length;
+  
+//     // Función para actualizar el testimonio visible
+//     function actualizarTestimonio() {
+//       testimonios.forEach((testimonio, index) => {
+//         testimonio.style.display = index === indexActual ? "block" : "none";
+//       });
+//     }
+  
+//     // Inicializa el primer testimonio como visible
+//     actualizarTestimonio();
+  
+//     // Cambia el testimonio cada 5 segundos
+//     setInterval(() => {
+//       indexActual = (indexActual + 1) % totalTestimonios;
+//       actualizarTestimonio();
+//     }, 5000);
+//   });
+
+  
+
+//   document.addEventListener("DOMContentLoaded", function() {
+//     let indexActual = 0;
+//     const testimonios = document.querySelectorAll(".section-testimonial");
+//     const totalTestimonios = testimonios.length;
+  
+//     // Función para ocultar todos los testimonios excepto el activo
+//     function actualizarTestimonios() {
+//       testimonios.forEach((testimonio, index) => {
+//         testimonio.style.display = index === indexActual ? "block" : "none";
+//       });
+//     }
+  
+//     // Función para mostrar el siguiente testimonio
+//     function mostrarSiguiente() {
+//       indexActual = (indexActual + 1) % totalTestimonios;
+//       actualizarTestimonios();
+//     }
+  
+//     // Función para mostrar el testimonio anterior
+//     function mostrarAnterior() {
+//       indexActual = (indexActual - 1 + totalTestimonios) % totalTestimonios;
+//       actualizarTestimonios();
+//     }
+  
+//     // Botones de control
+
+//     const btnAnterior = document.createElement("button");
+//     btnAnterior.innerText = "Anterior";
+//     document.body.appendChild(btnAnterior);
+//     btnAnterior.addEventListener("click", mostrarAnterior);
+
+//     const btnSiguiente = document.createElement("button");
+//     btnSiguiente.innerText = "Siguiente";
+//     document.body.appendChild(btnSiguiente);
+//     btnSiguiente.addEventListener("click", mostrarSiguiente);
+  
+  
+//     // Inicializa los testimonios
+//     actualizarTestimonios();
+//   });
+  
+  
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  

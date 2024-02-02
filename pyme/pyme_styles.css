@@ -119,7 +119,7 @@ a {
     align-self: center;
   }
   .header--title-container h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     line-height: 4rem;
     color: white;
@@ -648,53 +648,6 @@ a {
     max-width: 150px;
   }
 
-  @media screen and (min-width: 930px) {
-    .main-tables-container{
-      display: flex;
-      width: 930px;
-      margin: 0 auto;
-    }
-    .product-cards--container{
-      display: flex;
-      flex-wrap: wrap;
-      width: 930px;
-      margin: 0 auto;
-    }
-    .plans-container--slider{
-      justify-content: center;
-    }
-    .main-bitcoin--title{
-      font-size: 6.5rem;
-      padding-bottom: 300px;
-    }
-    .bitcoin-img-container .backgroundVideo{
-      height: 300px;
-    }
-    .header--title-container{
-      margin-top: 5rem;
-    }
-    .header--title-container h1{
-      font-size: 7rem;
-      line-height: 6rem;
-    }
-    .header__nav__btn {
-      display: inline-block;
-    }
-    footer img{
-      width: auto;
-      height: 80px;
-      max-width: none;
-    }
-  }
-  @media screen and (min-width: 523px) {
-    .header--title-container{
-      margin-top: 3.5rem;
-    }
-    .header--title-container h1{
-      font-size: 5rem;
-      line-height: 4rem;
-    }
-  }
   .loader {
     position: fixed;
     top: 0;
@@ -706,7 +659,7 @@ a {
     justify-content: center;
     align-items: center;
     z-index: 2;
-}
+  }
 
 .loader::after {
     content: '';
@@ -744,10 +697,6 @@ a {
 }
 
 
-/* .scroller {
-  max-width: 1280px;
-} */
-
 .scroller__inner {
   padding: 1rem 0;
   display: flex;
@@ -777,5 +726,199 @@ a {
 @keyframes scroll {
   to {
       transform: translate(calc(-50% - .5rem));
+  }
+}
+
+
+
+.container {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.testimonial {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+
+.testimonial .image {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+.slide .quote-icon {
+  font-size: 2rem;
+  color: var(--verde);
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+.details .job {
+  font-size: .8rem;
+  
+  font-weight: 400;
+  color:  white;
+}
+/* swiper button css */
+.nav-btn {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  transform: translateY(30px);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  transition: 0.2s;
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 2rem;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--verde);
+}
+
+.testimonial .backgroundVideo {
+  position: absolute; /* Posiciona el video de forma absoluta dentro de su contenedor */
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor sin perder sus proporciones */
+  z-index: -1; /* Coloca el video detrás del contenido del testimonio */
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.testimonial .slide {
+  position: relative;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  display: none;
+}
+
+/* @media screen and (max-width: 768px) {
+
+
+  .slide p {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+  .slide .quote-icon {
+    font-size: 2rem;
+  }
+  .details .name {
+    font-size: 1rem;
+  }
+  .details .job {
+    font-size: .8rem;
+  }
+} */
+
+
+@media screen and (min-width: 930px) {
+  .main-tables-container{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+  }
+  .product-cards--container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+  }
+  .plans-container--slider{
+    justify-content: center;
+  }
+  .main-bitcoin--title{
+    font-size: 6.5rem;
+    padding-bottom: 300px;
+  }
+  .bitcoin-img-container .backgroundVideo{
+    height: 300px;
+  }
+  .header--title-container{
+    margin-top: 5rem;
+  }
+  .header--title-container h1{
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+  .header__nav__btn {
+    display: inline-block;
+  }
+  footer img{
+    width: auto;
+    height: 80px;
+    max-width: none;
+  }
+  .container{
+    height: 65vh;
+  }
+  .testimonial{
+    height: 65vh;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    display: block;
+  }
+  .testimonial .image {
+    height: 15rem;
+    width: 15rem;
+  }
+  .testimonial .slide {
+    row-gap: 2.2rem;
+  }
+  .slide p {
+    padding: 0 20rem;
+    font-size: 1.5rem;
+  }
+  .slide .quote-icon {
+    font-size: 3rem;
+  }
+  .details .name {
+    font-size: 1.5rem;
+  }
+  .details .job {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 523px) {
+  .header--title-container{
+    margin-top: 3.5rem;
+  }
+  .header--title-container h1{
+    font-size: 5rem;
+    line-height: 4rem;
   }
 }

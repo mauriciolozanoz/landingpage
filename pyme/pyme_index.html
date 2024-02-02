@@ -10,7 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./pyme_styles.css">
-  <link rel="icon" href="./assets/icons/batata.svg">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  <!-- Boxicons CSS -->
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"rel="stylesheet"/>
 </head>
 <body>
   <div class="blur__overlay"></div>
@@ -231,6 +235,141 @@
         -->
       </section>
     </section>
+
+    <section class="container">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <div class="video-darken-overlay"></div> <!-- Overlay oscurecedor aquí -->
+            <video playsinline autoplay muted loop class="backgroundVideo">
+              <source src="./pyme_assets/chainsaw.mp4" type="video/mp4">
+              Tu navegador no soporta videos en HTML5.
+            </video>
+            
+            <img src="./pyme_assets/photo-perfil.avif" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="video-darken-overlay"></div> <!-- Overlay oscurecedor aquí -->
+            <video playsinline autoplay muted loop class="backgroundVideo">
+              <source src="./pyme_assets/asian_working.mp4" type="video/mp4">
+              Tu navegador no soporta videos en HTML5.
+            </video>
+            
+            <img src="./pyme_assets/photo-perfil-1.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="video-darken-overlay"></div> <!-- Overlay oscurecedor aquí -->
+            <video playsinline autoplay muted loop class="backgroundVideo">
+              <source src="./pyme_assets/working_IndustryMan.mp4" type="video/mp4">
+              Tu navegador no soporta videos en HTML5.
+            </video>
+            
+            <img src="./pyme_assets/photo-perfil-2.jpeg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- <section class="section-testimonial-slider">
+      <div class="section-testimonial">
+        <div class="testimonial-video-background">
+          <video class="testimonial-video-background" playsinline autoplay muted loop>
+            <source src="../assets/videos/videost.mp4" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+          </video>
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img src="./pyme_assets/company-logo-2.png" alt="Nombre Persona">
+            </div>
+            <h1 class="testimonial-name">Mauricio Lozano Zarate</h1>
+            <h2 class="testimonial-role">Practicante de producto</h2>
+            <p class="testimonial-message">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente repellendus autem alias neque voluptatum illo, officiis obcaecati ut iste nobis minima veniam error aut, fugit exercitationem eligendi culpa. Incidunt!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-testimonial">
+       
+        <div class="testimonial-video-background">
+          <video class="testimonial-video-background" playsinline autoplay muted loop>
+            <source src="../assets/videos/CreditoPYME.mp4" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+          </video>
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img src="./pyme_assets/company-logo-3.png" alt="Nombre Persona">
+            </div>
+            <h1 class="testimonial-name">Juan Perez</h1>
+            <h2 class="testimonial-role">Practicante de producto</h2>
+            <p class="testimonial-message">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente repellendus autem alias neque voluptatum illo, officiis obcaecati ut iste nobis minima veniam error aut, fugit exercitationem eligendi culpa. Incidunt!"</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-testimonial">
+        <div class="testimonial-video-background">
+          <video class="testimonial-video-background" playsinline autoplay muted loop>
+            <source src="../assets/videos/nuevovideoMA.mp4" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+          </video>
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img src="./pyme_assets/company-logo.png" alt="Nombre Persona">
+            </div>
+            <h1 class="testimonial-name">Alejandro Martinez</h1>
+            <h2 class="testimonial-role">Practicante de producto</h2>
+            <p class="testimonial-message">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente repellendus autem alias neque voluptatum illo, officiis obcaecati ut iste nobis minima veniam error aut, fugit exercitationem eligendi culpa. Incidunt!"</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
   </main>
   <footer>
     <section class="left">
@@ -244,6 +383,8 @@
       <img src="./pyme_assets/creditonegocio_logoblanco.png" alt="logo de creditonegocio 2020">
     </section>
   </footer>
+<!-- Swiper JS -->
+<script src="./swiper-bundle.min.js"></script>
 <script src="./pyme.js"></script>
   <!-- Add the code below inside the <body> tags of your HTML page -->
 <script>
